@@ -1,10 +1,27 @@
 <template>
   <div>
-    <h2>Home</h2>
-    <div>Home route component!<input type="text"></div>
+    <h2>Home route component</h2>
+    <div>
+      <ul class="nav nav-tabs">
+        <li>
+          <router-link to="/home/news">News</router-link>
+        </li>
+        <li>
+          <router-link to="/home/message">Message</router-link>
+        </li>
+      </ul>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+
+    </div>
   </div>
 </template>
 
-<script type="text/ecmascript-6">
+<script>
   export default {}
 </script>
+
+<style>
+
+</style>
